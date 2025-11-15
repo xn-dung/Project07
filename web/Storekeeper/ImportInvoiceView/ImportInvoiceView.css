@@ -1,0 +1,199 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#importNavbar {
+    position: relative !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    z-index: 1000 !important;
+    background-color: #2f3640 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 12px 24px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+#importNavbar .nav-left,
+#importNavbar .nav-right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+#importNavbar .nav-link {
+    color: #f5f6fa !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    transition: color 0.3s ease !important;
+}
+
+#importNavbar .nav-link:hover {
+    color: #00a8ff !important;
+}
+
+#importNavbar .nav-btn,
+#importNavbar .add-btn {
+    background-color: #00a8ff !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 10px 18px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.2s ease !important;
+    -webkit-appearance: none !important; /* reset appearance trên nhiều trình duyệt */
+    appearance: none !important;
+}
+
+#importNavbar .nav-btn:hover,
+#importNavbar .add-btn:hover {
+    background-color: #0097e6 !important;
+    transform: translateY(-2px) !important;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2f3640;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* --- Info Row --- */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 45%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item label {
+    font-weight: bold;
+    color: #2f3640;
+}
+
+.info-item input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    background-color: #f1f2f6;
+}
+
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+th {
+    background-color: #273c75;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dcdde1;
+}
+
+tr:hover {
+    background-color: #f1f2f6;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.total {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2f3640;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.actions button {
+    background-color: #44bd32;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.actions button:hover {
+    background-color: #4cd137;
+    transform: translateY(-2px);
+}
+
+
+.pagination {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    background-color: #f1f1f1;
+    border: none;
+    margin: 2px;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination button:hover {
+    background-color: #dcdde1;
+}

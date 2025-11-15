@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/webproject/Project07/src/java/dao/ImportInvoiceDAO.java</file>
+            <file>file:/D:/webproject/Project07/src/java/dao/ProductDAO.java</file>
+            <file>file:/D:/webproject/Project07/src/java/controller/SearchProductServlet.java</file>
+            <file>file:/D:/webproject/Project07/src/java/model/Category.java</file>
+            <file>file:/D:/webproject/Project07/src/java/controller/AddSupplierServlet.java</file>
+            <file>file:/D:/webproject/Project07/web/AddSupplier/AddSupplier.jsp</file>
+            <file>file:/D:/webproject/Project07/web/AddSupplier/AddSupplier.css</file>
+            <file>file:/D:/webproject/Project07/web/AddProduct/AddProduct.css</file>
+            <file>file:/D:/webproject/Project07/web/SearchSupplier/SearchSupplier.css</file>
+            <file>file:/D:/webproject/Project07/web/SearchSupplier/SearchSupplier.jsp</file>
+            <file>file:/D:/webproject/Project07/web/AddProduct/AddProduct.jsp</file>
+            <file>file:/D:/webproject/Project07/web/SearchProduct/SearchProduct.jsp</file>
+            <file>file:/D:/webproject/Project07/src/java/controller/AddProductServlet.java</file>
+            <file>file:/D:/webproject/Project07/src/java/dao/SupplierDAO.java</file>
+            <file>file:/D:/webproject/Project07/src/java/controller/PrintInvoiceServlet.java</file>
+            <file>file:/D:/webproject/Project07/web/MainStorekeeperHome/MainStorekeeperHome.jsp</file>
+            <file>file:/D:/webproject/Project07/web/Login/login.jsp</file>
+            <file>file:/D:/webproject/Project07/web/MainStorekeeperHome/MainStorekeeperHome.css</file>
+            <file>file:/D:/webproject/Project07/web/Login/login.css</file>
+            <file>file:/D:/webproject/Project07/src/java/controller/ImportInvoiceServlet.java</file>
+            <file>file:/D:/webproject/Project07/src/java/controller/LoginServlet.java</file>
+            <file>file:/D:/webproject/Project07/src/java/controller/LogoutServlet.java</file>
+            <file>file:/D:/webproject/Project07/web/MainStorekeeperHome/OnlineSupermarket.jpg</file>
+            <file>file:/D:/webproject/Project07/web/PrintImportInvoice/PrintImportInvoice.jsp</file>
+            <file>file:/D:/webproject/Project07/web/Login/OnlineSupermarket_2.jpg</file>
+            <file>file:/D:/webproject/Project07/web/Register/register.jsp</file>
+            <file>file:/D:/webproject/Project07/web/Register/register.css</file>
+        </group>
+    </open-files>
+</project-private>
