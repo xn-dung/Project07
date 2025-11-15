@@ -41,10 +41,9 @@ public class SearchSupplierServlet extends HttpServlet{
            HttpSession session = request.getSession();
            String name = request.getParameter("supplierName");
            ArrayList<Supplier>list = new ArrayList<>();
-           if(request.getParameter("supplierName") == null){
-               list  = sudao.searchSupplierByName("");
+           if(request.getParameter("supplierName") != null){
+              list = sudao.searchSupplierByName(name);
            }
-           else list = sudao.searchSupplierByName(name);
            session.setAttribute("listSupplier",list);
            request.getRequestDispatcher("Storekeeper/SearchSupplierView/SearchSupplierView.jsp").forward(request, response);
     }

@@ -67,6 +67,7 @@ public class SearchProductServlet extends HttpServlet {
         HttpSession session = request.getSession();
         String name = request.getParameter("productName");
         ArrayList<Product> list = new ArrayList<>();
+        ArrayList<Product> listProduct = new ArrayList<>();
         HashSet<Category> listCa = new HashSet<>();
         list = prdao.searchProductByName("");
         for (Product x : list) {
@@ -74,9 +75,9 @@ public class SearchProductServlet extends HttpServlet {
         }
         session.setAttribute("categories", listCa);
         if(request.getParameter("productName") != null){
-            list = prdao.searchProductByName(name);
+            listProduct = prdao.searchProductByName(name);
         }
-        session.setAttribute("listProduct", list);
+        session.setAttribute("listProduct", listProduct);
         ArrayList<String> selectedIds = (ArrayList<String>) session.getAttribute("selectedProducts");
         if (selectedIds == null) {
             selectedIds = new ArrayList<>();
