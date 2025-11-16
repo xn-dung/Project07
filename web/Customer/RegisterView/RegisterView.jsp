@@ -68,9 +68,11 @@
               <label>Phone Number: </label>
               <input
                 class="register-input"
-                type="text"
+                type="tel"
                 name="tel"
                 placeholder="Type your phone number"
+                pattern="[0-9]+"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                 required
               />
               <label>ID Card </label>
