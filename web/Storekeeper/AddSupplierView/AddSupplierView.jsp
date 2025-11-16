@@ -28,7 +28,8 @@
                 <input type="email" id="email" name="email" placeholder="Enter supplier email" required>
 
                 <label for="tel">Phone</label>
-                <input type="tel" id="tel" name="tel" placeholder="Enter phone number" required>
+                <input type="tel" id="tel" name="tel" placeholder="Enter phone number" pattern="[0-9]+"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
 
                 <button type="submit">Add</button>
                 <% String errorMessage = (String) request.getAttribute("errorMessage"); %>
