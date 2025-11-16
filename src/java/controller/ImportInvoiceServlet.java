@@ -76,7 +76,6 @@ public class ImportInvoiceServlet extends HttpServlet {
                 try{
                     float quantity = Float.parseFloat(quantities[i]);
                     float unitPrice = Float.parseFloat(unitPrices[i]);
-                    
                     if(quantity > 0 && unitPrice >= 0){
                         ImportedProduct ip = new ImportedProduct(quantity, unitPrice, products.get(i));
                         listIP.add(ip);
@@ -86,6 +85,7 @@ public class ImportInvoiceServlet extends HttpServlet {
                     session.setAttribute("toastMessage","The quantity or unit price must be real number");
                     session.setAttribute("toastType","warning");
                     doGet(request,response);
+                    return;
                 }
             }
             if(listIP.size() == products.size()){
@@ -116,8 +116,15 @@ public class ImportInvoiceServlet extends HttpServlet {
                 
             }
             else{
+                session.setAttribute("toastMessage","Some of the products you imported contain errors");
+                session.setAttribute("toastType","warning");
                 request.getRequestDispatcher("Storekeeper/ImportInvoiceView/ImportInvoiceView.jsp").forward(request, response);
             }
+        }
+        else{
+            session.setAttribute("toastMessage","The list of imported products contains errors");
+            session.setAttribute("toastType","warning");
+            request.getRequestDispatcher("Storekeeper/ImportInvoiceView/ImportInvoiceView.jsp").forward(request, response);
         }
        
     }
